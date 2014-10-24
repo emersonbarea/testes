@@ -1,75 +1,16 @@
-# NS-3 DCE Virtual Machine
+# Welcome
 
-To create a VM that support NS-3 and [Direct Code Execution (DCE)](http://www.nsnam.org/overview/projects/direct-code-execution/) framework, you can follow the steps bellow:
+The aim of this howto is to create a environment to emulate and simulate [CCN](https://www.ccnx.org/) applications in the same VM.
+Following these instructions, you'll be able to create a network topology using [FNSS](http://fnss.github.io/), use it in a emulate CCN scenary using [MiniCCNx](https://github.com/chesteve/mn-ccnx/wiki) and in a simulated scenary using [NS-3 DCE CCN](http://www.nsnam.org/overview/projects/direct-code-execution/) environment.
 
-## 1 – Create a Ubuntu VM
+Please, if you are interested in to do it, follow all instructions bellow:
 
-We used [Ubuntu 12.04.5 LTS - Server](http://releases.ubuntu.com/12.04/) to create the VM because some modules and dependencies are not totaly compatible with the latest version.
+## 1 - Create VM
 
-NS-3 DCE VM used in our CCNX experiments was created using [Oracle VM VirtualBox](https://www.virtualbox.org/), and bellow are the VM configuration suggested:
+## 2 - Install NS-3 DCE CCN
 
-```
-- Disk space: 20GB
-- Memory: 3GB
-- Processor: 2 or more cores
-- Network: 1 NIC (with Internet access)
-```
+## 3 - Install MiniCCNx
 
-## 2 - NS-3 DCE installation
+## 4 - Install FNSS
 
-Please, follow the steps bellow to install DCE in VM:
-
-### 2.1 - Installing prerequisites
-
-First of all, update your Ubuntu VM:
-
-```
-apt-get update
-apt-get upgrade
-```
-
-And install all dependencies that will be needed:
-
-```
-apt-get install build-essential qt-sdk python-dev libpcap-dev python-pygoocanvas python-pygraphviz bzr autoconf2.13 unzip unrar p7zip p7zip-rar cvs libboost-all-dev cmake git libdb-dev bison flex libssl-dev elfutils linux-headers-`uname -r` pkg-config gcc g++ libc6-dbg libxerces-c2-dev libpcre3-dev bison libtool libevent-dev gccxml python-pygccxml mercurial
-```
-
-### 2.2 - Building DCE advanced mode (with Linux kernel)
-
-We assume that you are using root or other account with administrative privileges.
-
-Go to the `/opt` directory. Install [bake](http://www.nsnam.org/docs/bake/tutorial/html/bake-over.html) integration tool and set some variables that are necessary to complete the instalation:
-
-```
-cd /opt
-
-hg clone http://code.nsnam.org/bake bake
-
-export BAKE_HOME=`pwd`/bake
-export PATH=$PATH:$BAKE_HOME
-export PYTHONPATH=$PYTHONPATH:$BAKE_HOME
-```
-
-So now, you can use Bake to install all modules and dependencies that will be needed:
-
-```
-mkdir dce
-cd dce
-bake.py configure -e dce-linux-1.4
-bake.py download
-bake.py build
-```
-
-This procedure will install NS-3 DCE advanced mode, where DCE uses a Linux network stack.
-
-P.s: The entire procedure presented here was taken from the [NS-3 DCE](http://www.nsnam.org/docs/dce/release/1.0/manual/html/getting-started.html) page.
-
-### 2.3 - DCE CCNx Examples
-
-If you want to test your DCE instalation, you can try an example script that is in `$DCE_PATH/source/ns-3-dce/example/ccnx` directory. To run it you can use `waf` like the example bellow:
-
-`$DCE_PATH/source/ns-3-dce/./waf --run dce-ccnd-simple`
-
-And go to `file-0` directory to look for all logs and outputs returned from the test.
-
-P.s: These test was taken from [DCE CCNx Examples](http://www.nsnam.org/docs/dce/release/1.0/manual/html/dce-ccnx.html) page.
+You can download a pre-configured VM already installed [here]().
