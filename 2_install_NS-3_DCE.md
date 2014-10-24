@@ -56,4 +56,4 @@ And go to `file-0` directory to look for all logs and outputs returned from the 
 
 P.s: These test was taken from [DCE CCNx Examples](http://www.nsnam.org/docs/dce/release/1.0/manual/html/dce-ccnx.html) page.
 
-Now, you are able to continue installing others softwares needed. Continue [here](https://github.com/emersonbarea/testes/edit/master/install_MiniCCNx.md)
+Now, you are able to continue installing others softwares needed. Continue [here](https://github.com/emersonbarea/testes/edit/master/3_install_MiniCCNx.md)
