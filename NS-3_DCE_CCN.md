@@ -1,20 +1,3 @@
-# NS-3 DCE Virtual Machine
-
-To create a VM that support NS-3 and [Direct Code Execution (DCE)](http://www.nsnam.org/overview/projects/direct-code-execution/) framework, you can follow the steps bellow:
-
-## 1 – Create a Ubuntu VM
-
-We used [Ubuntu 12.04.5 LTS - Server](http://releases.ubuntu.com/12.04/) to create the VM because some modules and dependencies are not totaly compatible with the latest version.
-
-NS-3 DCE VM used in our CCNX experiments was created using [Oracle VM VirtualBox](https://www.virtualbox.org/), and bellow are the VM configuration suggested:
-
-```
-- Disk space: 20GB
-- Memory: 3GB
-- Processor: 2 or more cores
-- Network: 1 NIC (with Internet access)
-```
-
 ## 2 - NS-3 DCE installation
 
 Please, follow the steps bellow to install DCE in VM:
