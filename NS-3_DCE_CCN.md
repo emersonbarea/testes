@@ -1,29 +1,22 @@
-## 2 - NS-3 DCE installation
+# 2 - NS-3 DCE installation
 
-Please, follow the steps bellow to install DCE in VM:
+Please, follow the steps bellow to install DCE in Ubuntu VM:
 
-### 2.1 - Installing prerequisites
+## 2.1 - Installing prerequisites
 
 First of all, update your Ubuntu VM:
-
-
-
-
-
-
 
 ```
 apt-get update
 apt-get upgrade
 ```
-
 And install all dependencies that will be needed:
 
 ```
 apt-get install build-essential qt-sdk python-dev libpcap-dev python-pygoocanvas python-pygraphviz bzr autoconf2.13 unzip unrar p7zip p7zip-rar cvs libboost-all-dev cmake git libdb-dev bison flex libssl-dev elfutils linux-headers-`uname -r` pkg-config gcc g++ libc6-dbg libxerces-c2-dev libpcre3-dev bison libtool libevent-dev gccxml python-pygccxml mercurial
 ```
 
-### 2.2 - Building DCE advanced mode (with Linux kernel)
+## 2.2 - Building DCE advanced mode (with Linux kernel)
 
 We assume that you are using root or other account with administrative privileges.
 
@@ -63,5 +56,4 @@ And go to `file-0` directory to look for all logs and outputs returned from the 
 
 P.s: These test was taken from [DCE CCNx Examples](http://www.nsnam.org/docs/dce/release/1.0/manual/html/dce-ccnx.html) page.
 
-
-
+Now, you are able to continue installing others softwares needed. Continue [here](https://github.com/emersonbarea/testes/edit/master/install_MiniCCNx.md)
