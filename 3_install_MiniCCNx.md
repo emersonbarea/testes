@@ -61,4 +61,4 @@ git clone git://github.com/carlosmscabral/mn-ccnx
 
 
 
-Now, you are able to continue installing others softwares needed. Continue [here](https://github.com/emersonbarea/testes/edit/master/3_install_MiniCCNx.md)
+Now, you are able to continue installing others softwares needed. Continue [here](https://github.com/emersonbarea/testes/edit/master/4_install_FNSS.md)
