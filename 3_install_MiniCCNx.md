@@ -47,7 +47,7 @@ make
 make install     
 ```
 
-## 3.4 - Instal MiniCCNx
+## 3.4 - Install MiniCCNx
 
 Download MiniCCNx from oficial repository <git clone git://github.com/carlosmscabral/mn-ccnx>
 
@@ -56,9 +56,9 @@ cd /opt
 git clone git://github.com/carlosmscabral/mn-ccnx
 ```
 
-##### Now, replace the `/opt/mn-ccnx/util/install.sh` file for the `install.sh` file available [here](https://github.com/emersonbarea/testes/edit/master/install.sh). You need replace it because the original `install.sh` file only permit you install MiniCCNx in `/home/<user>` directory.
+##### Replace the `/opt/mn-ccnx/util/install.sh` file for the `install.sh` file available [here](https://github.com/emersonbarea/testes/edit/master/install.sh). You need replace it because the original `install.sh` file only permit you install MiniCCNx in `/home/<user>` directory.
 
-Now, install MiniCCNx.
+Iinstall MiniCCNx.
 
 ```
 chmod +x /opt/mn-ccnx/util/install.sh
@@ -100,9 +100,5 @@ make install
 
 ldconfig
 ```
-
-[Here]() we provide a further test for the MiniCCNx with OSPFN. To use it, follow the steps bellow:
-
-
 
 Now, you are able to continue installing others softwares needed. Continue [here](https://github.com/emersonbarea/testes/edit/master/4_install_FNSS.md).
