@@ -68,10 +68,40 @@ cd /opt/mn-ccnx/util
 ./install.sh -fnv
 ```
 
+### 3.4.1 - MiniCCNx Tests and Examples (optional)
 
+If you interested in test MiniCCNx to test your installation, you can run this [test](https://github.com/chesteve/mn-ccnx/wiki/Routing).
 
+Look, you will need to have [OSPFN2.0](https://github.com/NDN-Routing/OSPFN2.0) running in your VM, so now, follow the procedure bellow to install OSPFN.
 
+```
+useradd -m quagga
+passwd -l quagga             
+rm -f /home/quagga/.bash*
 
+cd /usr/local/etc/
+mkdir quagga
+chown quagga:quagga quagga
+chmod g+w quagga
+
+cd /var/run
+mkdir quagga-state
+chown quagga:quagga quagga-state
+chmod g+w quagga-state
+
+cd /opt
+git clone https://github.com/NDN-Routing/OSPFN2.0
+cd OSPFN2.0/
+
+./configure --enable-opaque-lsa --disable-ipv6 --disable-ripd --disable-ripngd --disable-ospf6d --disable-bgpd --disable-bgp-announce --sysconfdir=/usr/local/etc/quagga --localstatedir=/var/run/quagga-state
+
+make
+make install
+
+ldconfig
+```
+
+[Here]() we provide a further test for the MiniCCNx with OSPFN. To use it, follow the steps bellow:
 
 
 
