@@ -9,6 +9,7 @@ We will use `FNSS` to generate topology and traffic matrix in our emulated exper
 To emulate scenarios in `MiniCCNx`, you need to install `FNSS core`. Do it following the step bellow:
 
 ```
+cd /opt
 git clone https://github.com/fnss/fnss.git
 cd fnss
 ./ubuntu_install
@@ -39,12 +40,21 @@ mn-fnss fnss-topo.xml
  (h1, s2) (h2, s2) (h3, s3) (h4, s3) (s1, s2) (s1, s3)
 ``` 
 
-### 4.1.2.- Install FNSS to simulate (FNSS NS-3)
+## 4.2.- Install FNSS to simulate (FNSS NS-3)
 
+To install `FNSS NS-3`, you need make it giving the NS-3 installation directory. See bellow:
 
+```
+cd /opt/fnss/ns3
+make install NS3_DIR=/opt/dce/source/ns-3.21/
+```
 
+If all is done, test it.
 
+### 4.2.1 - Testing `FNSS NS-3`
 
-
-
+```
+cd /opt/dce/source/ns-3.21/
+./waf --run fnss-example
+```
 Now, you are able to continue installing others softwares needed. Continue [here](https://github.com/emersonbarea/testes/edit/master/4_install_FNSS.md).
