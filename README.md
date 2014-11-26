@@ -1,7 +1,6 @@
 # Welcome
 
-The aim of this howto is to create a environment to emulate and simulate [CCN](https://www.ccnx.org/) applications in the same VM.
-Following these instructions, you'll be able to create a network topology using [FNSS](http://fnss.github.io/), use it in a emulate CCN scenary using [MiniCCNx](https://github.com/chesteve/mn-ccnx/wiki) and in a simulated scenary using [NS-3 DCE CCN](http://www.nsnam.org/overview/projects/direct-code-execution/) environment.
+The aim of this howto is to create a environment to test [NFV](http://www.etsi.org/technologies-clusters/technologies/nfv) Escalability.
 
 Please, if you are interested in to do it, follow all instructions bellow:
 
