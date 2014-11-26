@@ -8,8 +8,4 @@ Please, if you are interested in to do it, follow all instructions bellow:
 
 ## 2 - [Install ClickOS]()
 
-## 3 - [Install MiniCCNx]()
-
-## 4 - [Install FNSS]()
-
 You can download a pre-configured VM already installed [here]().
